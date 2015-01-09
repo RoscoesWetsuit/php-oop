@@ -81,6 +81,64 @@ public function Method3( $argument, $another) {
 	//stuff
 }
 
+//lecture 2--------------------------------------------------------------
+//example1
+class shoe {
+public $brand;
+public $series;
+public $model;
+
+	function __construct($title, $brand, $series, $model) {
+	$this->brand = $brand;
+	$this->series = $series;
+	$this->model = $model;
+	}
+
+	function getName() {
+	return "{$this->brand}" . 
+	"{$this->series}";
+
+class car {
+public $make;
+public $model;
+public $year;
+
+    function __construct($title, $make, $model, $year) {
+	$this->make = $make;
+	$this->model = $model;
+	$this->model = $year;
+	}
+
+	function getName() {
+	return "{$this->make}" . 
+	"{$this->model}";
+
+class cellphones {
+public $brand;
+public $type;
+public $os;
+
+	function __construct($title, $brand, $type, $os) {
+	$this->brand = $brand;
+	$this->type = $type;
+	$this->os = $os;
+	}
+
+	function getName() {
+	return "{$this->brand}" . 
+	"{$this->series}";
+
+//example2
+
+	$shoe1 = new shoe("nike", "air max 90", "black tiger camo");
+		print "shoe 1: {$shoe1->getName()}\n";
+
+	$car1 = new car("bmw", "m3", "1988");
+		print "car 1: {$car1->getName()}\n";
+
+	$cellphones1 = new cellphones("samsung", "galaxy s5", "android");
+		print "cellphones 1: {$cellphones1->getName()}\n";
+
 ?>
 </body>
 </html>
