@@ -88,37 +88,39 @@ public $brand;
 public $series;
 public $model;
 
-	function __construct($title, $brand, $series, $model) {
+	function __construct($brand, $series, $model) {
 	$this->brand = $brand;
 	$this->series = $series;
 	$this->model = $model;
 	}
 
-	function getName() {
+	function getshoe() {
 	return "{$this->brand}" . 
 	"{$this->series}";
+}
 
 class car {
 public $make;
 public $model;
 public $year;
 
-    function __construct($title, $make, $model, $year) {
+    function __construct($make, $model, $year) {
 	$this->make = $make;
 	$this->model = $model;
 	$this->model = $year;
 	}
 
-	function getName() {
+	function getcar() {
 	return "{$this->make}" . 
 	"{$this->model}";
+}
 
 class cellphones {
 public $brand;
 public $type;
 public $os;
 
-	function __construct($title, $brand, $type, $os) {
+	function __construct($brand, $type, $os) {
 	$this->brand = $brand;
 	$this->type = $type;
 	$this->os = $os;
@@ -127,17 +129,18 @@ public $os;
 	function getName() {
 	return "{$this->brand}" . 
 	"{$this->series}";
+}
 
 //example2
 
 	$shoe1 = new shoe("nike", "air max 90", "black tiger camo");
-		print "shoe 1: {$shoe1->getName()}\n";
+		print shoe 1: {$shoe1->getshoe()}\n;
 
 	$car1 = new car("bmw", "m3", "1988");
-		print "car 1: {$car1->getName()}\n";
+		print car 1: {$car1->getcar()}\n;
 
 	$cellphones1 = new cellphones("samsung", "galaxy s5", "android");
-		print "cellphones 1: {$cellphones1->getName()}\n";
+		print cellphones 1: {$cellphones1->getcellphones()}\n;
 
 ?>
 </body>
