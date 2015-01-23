@@ -24,5 +24,6 @@
 	if (is_string($var3)){
 	echo "$var3 is an integer!<br>";
 	}
-	else
+	else {
 	echo 'naw son, $var3 is not an integer';
+}
