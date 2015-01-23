@@ -141,7 +141,7 @@ public $os;
 
 	$cellphones1 = new cellphones("samsung", "galaxy s5", "android");
 		print cellphones 1: {$cellphones1->getcellphones()}\n;
-
+		
 ?>
 </body>
 </html>
